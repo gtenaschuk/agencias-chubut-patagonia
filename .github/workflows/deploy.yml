@@ -24,14 +24,14 @@ jobs:
       # Deploys to FTP
       - name: SFTP Deploy
         id: upload
-        uses: Creepios/sftp-action@v1.0.3
+        uses: SamKirkland/FTP-Deploy-Action@v4
         with:
-          host: ${{ secrets.SFTP_HOST }}
+          server: ${{ secrets.SFTP_HOST }}
           port: 22
+          protocol: sftp
           username: ${{ secrets.SFTP_USERNAME }}
           password: ${{ secrets.SFTP_PASSWORD }}
           # The local folder to copy, defaults to root project folder
-          localPath: ./
+          local-dir: ./
           # This was generated using the output of
-          remotePath: '/home/PeninsulaValdes_german/public_html/wp-content/themes/agencias-chubut-patagonia'
-          agent: false
+          server-dir: '/home/PeninsulaValdes_german/public_html/wp-content/themes/agencias-chubut-patagonia'
