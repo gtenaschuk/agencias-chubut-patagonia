@@ -24,7 +24,7 @@ jobs:
       # Deploys to FTP
       - name: SFTP Deploy
         id: upload
-        uses: Creepios/sftp-action@v1.0.3
+        uses: Creepios/sftp-action@v1.0.2
         with:
           host: ${{ secrets.SFTP_HOST }}
           port: 22
