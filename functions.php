@@ -8,7 +8,7 @@
  */
 
 // Constants.
-define( 'DINKUM_GUTENBERG_V2_VERSION', '1.2.5' );
+define( 'DINKUM_GUTENBERG_V2_VERSION', '1.2.6' );
 
 // Theme Support.
 require_once 'inc/theme-support.php';
