@@ -34,3 +34,4 @@ jobs:
           localPath: ./
           # This was generated using the output of `ssh-keyscan sftp.flywheelsites.com`
           remotePath: '/home/PeninsulaValdes_german/public_html/wp-content/themes/agencias-chubut-patagonia'
+          sshAgent: false
