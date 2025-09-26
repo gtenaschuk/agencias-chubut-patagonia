@@ -35,3 +35,5 @@ jobs:
           local_path: ./*
           # This was generated using the output of
           remote_path: '/home/PeninsulaValdes_german/public_html/wp-content/themes/agencias-chubut-patagonia/'
+          rsyncArgs: '--exclude=node_modules --exclude=.git --exclude=*.log'
+          sftpArgs: '-o ConnectTimeout=5'
