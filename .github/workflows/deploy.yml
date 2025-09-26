@@ -34,4 +34,4 @@ jobs:
           # The local folder to copy, defaults to root project folder
           local-dir: ./
           # This was generated using the output of
-          server-dir: '/home/PeninsulaValdes_german/public_html/wp-content/themes/agencias-chubut-patagonia'
+          server-dir: '/home/PeninsulaValdes_german/public_html/wp-content/themes/agencias-chubut-patagonia/'
