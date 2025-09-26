@@ -24,7 +24,7 @@ jobs:
       # Deploys to FTP
       - name: SFTP Deploy
         id: upload
-        uses: wlixcc/SFTP-Deploy-Action@v1.2.4
+        uses: wlixcc/SFTP-Deploy-Action@v1.2.6
         with:
           server: ${{ secrets.SFTP_HOST }}
           port: 22
@@ -32,6 +32,6 @@ jobs:
           username: ${{ secrets.SFTP_USERNAME }}
           password: ${{ secrets.SFTP_PASSWORD }}
           # The local folder to copy, defaults to root project folder
-          local-dir: ./
+          local_path: ./*
           # This was generated using the output of
-          server-dir: '/home/PeninsulaValdes_german/public_html/wp-content/themes/agencias-chubut-patagonia/'
+          remote_path: '/home/PeninsulaValdes_german/public_html/wp-content/themes/agencias-chubut-patagonia/'
