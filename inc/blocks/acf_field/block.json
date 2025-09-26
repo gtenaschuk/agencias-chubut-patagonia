@@ -1,0 +1,15 @@
+{
+  "name": "acf/acf_field",
+  "title": "ACF Field",
+  "description": "A custom block that uses ACF fields.",
+  "category": "formatting",
+  "icon": "admin-comments",
+  "keywords": ["text"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "acf_field.php"
+  },
+  "supports": {
+    "anchor": true
+  }
+}

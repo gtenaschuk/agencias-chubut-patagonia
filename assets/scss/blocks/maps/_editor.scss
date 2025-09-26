@@ -1,0 +1,9 @@
+/* Impor block style and add customization below it. */
+@use "style";
+
+.block-overlay {
+	-webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+    margin-top: 30px;
+}

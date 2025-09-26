@@ -1,0 +1,45 @@
+/* Heading */
+@use "variables" as v;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin-block-start: 0 !important;
+	margin-bottom: 40px;
+}
+
+.icon-title {
+	gap: 0 !important;
+
+	.h20 {
+		font-size: 20px;
+		color: var(--global--color-green);
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	h1 {
+		font-size: 40px !important;
+		text-align: center;
+	}
+
+	h2 {
+		font-size: 30px !important;
+	}
+}
+
+h2.error-404 {
+	span {
+		-webkit-transform: rotate(-90deg);
+		-moz-transform: rotate(-90deg);
+		-o-transform: rotate(-90deg);
+		transform: rotate(46deg);
+		filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+		position: absolute;
+		margin-top: 20px;
+		color: var(--global--color-green);
+	}
+}

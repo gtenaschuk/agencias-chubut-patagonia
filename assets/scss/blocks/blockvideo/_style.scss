@@ -1,0 +1,102 @@
+.blockvideo {
+	margin-block-start: 0 !important;
+	background-color: var(--global--color-gray);
+
+	@media screen and (max-width: 782px) {
+		margin: 0 20px;
+	}
+
+	.wp-block-columns {
+		.wp-block-column {
+			background-color: var(--global--color-white);
+
+			&:last-child {
+				margin-left: -120px;
+				z-index: 1;
+				border-radius: 12px 0 0 0;
+
+				p.is-style-prg_supverde {
+					position: absolute;
+					top: 0;
+				}
+
+				.wp-block-group {
+					max-width: calc(1140px / 2);
+					padding: 100px 0 100px 120px;
+					position: relative;
+				}
+			}
+
+			.wp-block-cover {
+				img {
+					border-radius: 0 12px 12px 0;
+				}
+			}
+		}
+	}
+}
+
+.wp-block-group {
+	&.blueblock {
+		background-color: var(--global--color-heading);
+		background-image: url(https://agenciasdeviajes.chubutpatagonia.gob.ar/wp-content/uploads/2023/05/wavy-pattern-1.png);
+		position: relative;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center center;
+
+		.icon-animal {
+			img {
+				background-color: var(--global--color-green);
+				display: -webkit-box;
+				display: -ms-flexbox;
+				display: flex;
+				-webkit-box-align: center;
+				-ms-flex-align: center;
+				align-items: center;
+				-webkit-box-pack: center;
+				-ms-flex-pack: center;
+				justify-content: center;
+				border-radius: 50%;
+				padding: 10px;
+				width: 100%;
+				margin-bottom: 100px;
+			}
+
+			p {
+				font-size: 120px;
+				color: var(--global--color-green) !important;
+				font-weight: 300;
+				margin-right: 50px;
+			}
+		}
+
+		.wp-block-columns {
+			.wp-block-column {
+				padding-top: 130px;
+
+				.wp-block-group {
+					max-width: calc(1140px / 2);
+					margin-left: auto;
+
+					@media screen and (min-width: 992px) {
+						max-width: calc(960px / 2);
+					}
+
+					@media screen and (max-width: 781px) {
+						max-width: 100%;
+						padding: 0 20px;
+
+						.wp-block-spacer {
+							height: 0 !important;
+						}
+					}
+				}
+
+				&:last-child {
+					border-left: 1px solid #4c5b66;
+				}
+			}
+		}
+	}
+}

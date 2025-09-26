@@ -1,0 +1,76 @@
+.linebluebg {
+	margin: 100px auto !important;
+	background: url(http://agenciasdeviajes.chubutpatagonia.gob.ar/wp-content/uploads/2023/05/wavy-pattern-1.png),
+		var(--global--color-heading);
+	padding: 90px 0 155px;
+
+	h2 {
+		color: var(--global--color-white) !important;
+		line-height: 54px;
+	}
+
+	p:not(.is-style-prg_suptitel) {
+		color: var(--global--color-white) !important;
+	}
+}
+
+.leftimg-text {
+	.wp-block-columns {
+		.wp-block-column {
+			position: relative;
+
+			&.col-img-counter {
+				.wp-block-cover {
+					overflow: visible;
+				}
+
+				.wp-block-group {
+					background-color: var(--global--color-green);
+					min-width: 200px;
+					position: absolute;
+					top: 70px;
+					left: -40px;
+					z-index: 2;
+					color: var(--global--color-white);
+					border-radius: 8px;
+					padding: 24px 40px 30px;
+					display: -webkit-inline-box;
+					display: -ms-inline-flexbox;
+					display: inline-flex;
+					-webkit-box-orient: vertical;
+					-webkit-box-direction: normal;
+					-ms-flex-direction: column;
+					flex-direction: column;
+					-webkit-box-align: start;
+					-ms-flex-align: start;
+					align-items: flex-start;
+
+					p {
+						margin-bottom: 0;
+						margin-left: 0;
+						margin-top: 10px;
+						font-weight: 700;
+						font-size: 16px;
+						line-height: 29px;
+						color: var(--global--color-white) !important;
+						// text-transform: capitalize;
+					}
+
+					.wp-block-boldblocks-counting-number {
+						margin-left: 0 !important;
+						font-family: var(--font-secondary);
+						font-size: 37px;
+						font-weight: 900;
+						line-height: 29px;
+						display: inline-block;
+						color: var(--global--color-white);
+					}
+
+					figure {
+						margin-left: 0 !important;
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,128 @@
+{
+  "name": "dinkum-gutenberg-v2",
+  "version": "1.0.0",
+  "description": "Hi. I'm a base theme.",
+  "author": "Dinkum Interactive Team",
+  "license": "MIT",
+  "keywords": [
+    "WordPress",
+    "Theme"
+  ],
+  "homepage": "https://github.com/DinkumInteractive/dinkum-gutenberg-v2",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DinkumInteractive/dinkum-gutenberg-v2.git"
+  },
+  "bugs": {
+    "url": "https://github.com/DinkumInteractive/dinkum-gutenberg-v2/issues"
+  },
+  "scripts": {
+    "stylelint-check": "stylelint-config-prettier-check",
+    "start": "composer install --ignore-platform-reqs && npm install && npm run build",
+    "build": "NODE_ENV=production webpack --config config/webpack.config.prod.js",
+    "dev": "NODE_ENV=development webpack --config config/webpack.config.dev.js",
+    "watch": "NODE_ENV=development NODE_WATCH=theme webpack --watch --config config/webpack.config.dev.js",
+    "build-release": "npm install && composer install --no-dev -o && npm run build",
+    "lint-release": "npm install && composer install && npm run lint",
+    "lint-css": "stylelint assets/scss assets/css",
+    "lint-js": "eslint assets/js",
+    "lint-php": "composer run lint",
+    "format-js": "eslint --fix assets/js",
+    "format-css": "stylelint assets/scss assets/css --fix",
+    "format-php": "composer lint-fix",
+    "lint": "npm run lint-css && npm run lint-js && npm run lint-php",
+    "format": "npm run format-js && npm run format-css && npm run format-php",
+    "test-a11y": "node tests/accessibility/compliance/pa11y.js"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.17.9",
+    "@babel/eslint-parser": "^7.17.0",
+    "@wordpress/babel-preset-default": "^6.8.0",
+    "@wordpress/prettier-config": "^1.2.0",
+    "@wordpress/scripts": "^22.4.0",
+    "@wordpress/stylelint-config": "^20.0.2",
+    "babel-loader": "^8.2.4",
+    "browser-sync": "^2.27.9",
+    "browser-sync-webpack-plugin": "^2.3.0",
+    "browserslist": "^4.20.2",
+    "clean-webpack-plugin": "^4.0.0",
+    "copy-webpack-plugin": "^10.2.4",
+    "core-js": "^3.21.1",
+    "css-loader": "^6.7.1",
+    "cssnano": "^5.1.7",
+    "eslint": "^8.13.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsdoc": "^39.1.0",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.29.4",
+    "eslint-plugin-react-hooks": "^4.4.0",
+    "eslint-webpack-plugin": "^3.1.1",
+    "html-webpack-plugin": "^5.5.0",
+    "imagemin-webp-webpack-plugin": "^3.3.6",
+    "imagemin-webpack-plugin": "^2.4.2",
+    "postcss": "^8.4.12",
+    "postcss-calc": "^8.2.4",
+    "postcss-cli": "^9.1.0",
+    "postcss-css-variables": "^0.18.0",
+    "postcss-custom-media": "^8.0.0",
+    "postcss-discard-duplicates": "^5.1.0",
+    "postcss-editor-styles": "^0.3.0",
+    "postcss-focus-within": "^5.0.4",
+    "postcss-import": "^14.1.0",
+    "postcss-loader": "^6.2.1",
+    "postcss-nested": "^5.0.6",
+    "postcss-preset-env": "^7.4.3",
+    "postcss-scss": "^4.0.3",
+    "prettier": "^2.6.2",
+    "rtlcss": "^3.5.0",
+    "sass": "^1.50.0",
+    "sass-loader": "^12.6.0",
+    "style-loader": "^3.3.1",
+    "stylelint": "^14.6.1",
+    "stylelint-config-standard-scss": "^3.0.0",
+    "stylelint-declaration-strict-value": "^1.8.0",
+    "stylelint-order": "^5.0.0",
+    "stylelint-webpack-plugin": "^3.2.0",
+    "terser": "^5.12.1",
+    "webpack": "^5.72.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-fix-style-only-entries": "^0.6.1",
+    "webpack-merge": "^5.8.0",
+    "webpack-remove-empty-scripts": "^0.8.0",
+    "webpackbar": "^5.0.2"
+  },
+  "testing": {
+    "urls": {
+      "homepage": "http://dinkum-gutenberg-v2.test",
+      "article": "http://dinkum-gutenberg-v2.test/hello-world",
+      "search-results": "http://dinkum-gutenberg-v2.test/?s=hello",
+      "local": "http://dinkum-gutenberg-v2.test"
+    },
+    "accessibility": {
+      "compliance": "WCAG2AA"
+    }
+  },
+  "engines": {
+    "node": ">=12.0.0"
+  },
+  "rtlcssConfig": {
+    "options": {
+      "autoRename": false,
+      "autoRenameStrict": false,
+      "blacklist": {},
+      "clean": true,
+      "greedy": false,
+      "processUrls": false,
+      "stringMap": []
+    },
+    "plugins": [],
+    "map": false
+  },
+  "dependencies": {
+    "stylelint-config-prettier": "^9.0.3"
+  }
+}

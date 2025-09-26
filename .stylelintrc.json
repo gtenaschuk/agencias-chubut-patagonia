@@ -1,0 +1,25 @@
+{
+  "extends": ["@wordpress/stylelint-config/scss", "stylelint-config-prettier"],
+  "rules": {
+    "at-rule-no-unknown": null,
+    "selector-class-pattern": null,
+    "font-weight-notation": null,
+    "selector-type-no-unknown": null,
+    "max-line-length": null,
+    "at-rule-empty-line-before": null,
+    "selector-pseudo-element-colon-notation": null,
+    "selector-combinator-space-before": null,
+    "number-leading-zero": null,
+    "no-descending-specificity": null,
+    "no-invalid-double-slash-comments": true,
+    "comment-empty-line-before": "always",
+    "length-zero-no-unit": [true, { "ignore": ["custom-properties"] }],
+    "rule-empty-line-before": [
+      "always-multi-line",
+      {
+        "except": ["first-nested"],
+        "ignore": ["after-comment"]
+      }
+    ]
+  }
+}

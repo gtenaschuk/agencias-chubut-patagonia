@@ -1,0 +1,1 @@
+jQuery(window).scroll((function(){jQuery(window).scrollTop()>=100?jQuery(".js_headermain").addClass("fixed-header"):jQuery(".js_headermain").removeClass("fixed-header")}));

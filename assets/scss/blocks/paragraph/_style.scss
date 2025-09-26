@@ -1,0 +1,102 @@
+p {
+	color: var(--global--color-body) !important;
+	margin-bottom: 20px;
+}
+
+.is-style-prg_primary {
+	color: var(--global--color-heading) !important;
+	font-weight: 500;
+	border-left: 4px solid var(--global--color-green);
+	margin-bottom: 25px;
+	padding-left: 95px;
+	font-size: 17px;
+	line-height: 27px;
+}
+
+.is-style-prg_padding {
+	padding-left: 99px;
+	margin-block-end: 42px !important;
+	font-size: 16px;
+}
+
+.is-style-prg_suptitel {
+	text-transform: none;
+	color: var(--global--color-green) !important;
+	font-size: 15px;
+	font-weight: 700;
+	line-height: 1;
+	margin-block-end: 13px !important;
+}
+
+.is-style-prg_supverde {
+	background-color: var(--global--color-green);
+	color: var(--global--color-white) !important;
+	border-radius: 0 0 12px 12px;
+	margin-bottom: 55px;
+	font-size: 15px;
+	font-weight: 700;
+	line-height: 1;
+	width: max-content;
+	padding: 12px 20px;
+}
+
+.is-style-prg_bggreen {
+	display: inline-block;
+	width: -webkit-max-content;
+	width: -moz-max-content;
+	width: max-content;
+	padding: 12px 20px;
+	border-radius: 4px;
+	background-color: #e0f6e9;
+	text-transform: none;
+	color: var(--global--color-green) !important;
+	font-size: 15px;
+	font-weight: 700;
+	line-height: 1;
+	margin-block-end: 20px !important;
+}
+
+.is-style-prg_enlaces {
+	font-weight: 700;
+	font-size: 15px;
+
+	a {
+		position: relative;
+		font-weight: 700;
+		color: var(--global--color-heading) !important;
+		-webkit-transition: 0.3s ease-in-out;
+		-o-transition: 0.3s ease-in-out;
+		transition: 0.3s ease-in-out;
+		// text-transform: capitalize;
+		padding-bottom: 6px;
+		display: inline-block;
+
+		&::before {
+			content: "";
+			-webkit-transition: 0.3s ease-in-out;
+			-o-transition: 0.3s ease-in-out;
+			transition: 0.3s ease-in-out;
+			position: absolute;
+			bottom: 0;
+			left: 50%;
+			-webkit-transform: translateX(-50%);
+			-ms-transform: translateX(-50%);
+			transform: translateX(-50%);
+			width: 100%;
+			height: 2px;
+			background-color: var(--global--color-green);
+		}
+
+		&:hover {
+			text-decoration: none;
+
+			&::before {
+				width: calc(100% - 20%);
+			}
+		}
+	}
+}
+
+.is-style-prg_pulleft {
+	padding-right: calc(100% - 55%);
+}

@@ -1,0 +1,40 @@
+@use "variables" as v;
+
+/* $tablet-width: var(--alignwide-size); */
+
+@media screen and (max-width: v.$alignwide-size) {
+	.entry-content
+	/* stylelint-disable-line indentation */
+	> *:not(.alignfull):not(.alignleft):not(.alignright):not(.wp-block-separator):not(.woocommerce),
+	.alignwide {
+		max-width: var(--responsive-align) !important;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+/* copy of wp default css to a 1000px media query */
+@media (min-width: 1000px) {
+	.wp-block-navigation__responsive-container-open:not(.always-shown) {
+		display: none !important;
+	}
+
+	.wp-block-navigation__responsive-container:not(.hidden-by-default):not(.is-menu-open) {
+		display: block !important;
+		width: 100%;
+		position: relative;
+		z-index: auto;
+		background-color: inherit;
+	}
+}
+
+/* neutralize the wp default for 600px */
+@media (min-width: 600px) {
+	.wp-block-navigation__responsive-container-open:not(.always-shown) {
+		display: flex;
+	}
+
+	.wp-block-navigation__responsive-container:not(.hidden-by-default):not(.is-menu-open) {
+		display: none;
+	}
+}

@@ -1,0 +1,14 @@
+vendor/
+node_modules/
+assets/images
+*.php
+*.map
+*.png
+*.json
+LICENSE
+composer.lock
+*.txt
+html/assets/scss/generic/_normalize.scss
+html/assets/css/lib/**
+assets/scss/generic/_normalize.scss
+assets/css/lib/**

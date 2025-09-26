@@ -1,0 +1,302 @@
+/* Footer Styles */
+@use "variables" as v;
+
+footer {
+	margin-block-start: 0 !important;
+
+	@media screen and (max-width: 1200px) {
+		nav {
+			.wp-block-navigation__responsive-container {
+				display: contents !important;
+				position: relative;
+
+				ul {
+					li.wp-block-navigation-item.wp-block-navigation-link {
+						padding: 10px 0;
+						justify-content: center !important;
+					}
+				}
+			}
+
+			button.wp-block-navigation__responsive-container-close,
+			button.wp-block-navigation__responsive-container-open  {
+				display: none !important;
+			}
+		}
+	}
+
+	.footergroup {
+		background-color: #253745;
+
+		.wp-block-columns.menu_map {
+			padding-top: 100px;
+			padding-bottom: 68px;
+
+			.wp-block-column {
+				position: relative !important;
+				@media screen and (max-width: 1200px) {
+				text-align: center;
+				}
+
+				.wp-block-group {
+					.gtranslate_wrapper {
+						position: absolute !important;
+						right: 0 !important;
+					}
+				}
+
+				.wp-block-columns.footer_menu {
+					.wp-block-column {
+						p {
+							color: var(--global--color-white) !important;
+							font-size: 16px;
+							font-weight: 700;
+						}
+
+						ul {
+							gap: 0;
+
+							li {
+								width: 100%;
+
+								a {
+									color: #929ba2;
+									font-size: 14px;
+									font-weight: 400;
+									line-height: 33px;
+									text-decoration: none;
+									-webkit-transition: all 300ms ease-in-out;
+									-o-transition: all 300ms ease-in-out;
+									transition: all 300ms ease-in-out;
+
+									:hover {
+										color: var(--global--color-green);
+									}
+								}
+							}
+						}
+					}
+				}
+
+				.wp-block-group.footer_info {
+					justify-content: flex-end;
+
+					@media screen and (max-width: 1200px) {
+						justify-content: center;
+
+						figure {
+							display: none;
+						}
+					}
+
+					.wp-block-group {
+						.gtranslate_wrapper {
+							position: absolute;
+							right: 0;
+						}
+
+						p {
+							&.foo_phone {
+								a {
+									font-weight: 300;
+									font-size: 34px;
+									line-height: 22px;
+									color: #929ba2;
+									text-decoration: none;
+
+									strong {
+										color: var(--global--color-white);
+									}
+								}
+							}
+
+							&.foo_email {
+								a {
+									font-weight: 700;
+									font-size: 15px;
+									line-height: 21px;
+									text-decoration: none;
+
+									&::before {
+										font-family: Fontawesome, serif;
+										content: "\f0e0";
+										margin-right: 5px;
+									}
+								}
+							}
+
+							&.foo_location {
+								a {
+									text-decoration: none;
+									color: var(--global--color-white);
+									font-size: 14px;
+									font-weight: 700;
+									line-height: 24px;
+									display: flex;
+
+									@media screen and (max-width: 1200px) {
+										justify-content: center;
+									}
+
+									&::before {
+										font-family: Fontawesome, serif;
+										content: "\f279";
+										margin-right: 5px;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+
+		.wp-block-columns.foooter_social {
+			padding: 50px 0 40px;
+			@media screen and (max-width: 1200px) {
+				padding: 0 0 40px;
+			}
+
+			p {
+				color: var(--global--color-white) !important;
+				font-size: 14px;
+			}
+
+			ul {
+				@media screen and (max-width: 1200px) {
+					justify-content: flex-start;
+				}
+
+				li {
+					background-color: transparent;
+					border: 1px solid #fff;
+					-webkit-transition: all 300ms ease-in-out;
+					-o-transition: all 300ms ease-in-out;
+					transition: all 300ms ease-in-out;
+
+					.screen-reader-text {
+						clip: rect(1px, 1px, 1px, 1px);
+						word-wrap: normal !important;
+						border: 0;
+						-webkit-clip-path: inset(50%);
+						clip-path: inherit;
+						height: 13px;
+						margin: -1px;
+						overflow: hidden;
+						padding: 0;
+						position: inherit;
+						width: 70px;
+						line-height: 1.1;
+						margin-left: 2px;
+						font-size: 12px;
+
+						@media screen and (max-width: 1200px) {
+							display: none;
+						}
+					}
+
+					&:hover {
+						border: 1px solid var(--global--color-green);
+
+						a {
+							svg {
+								fill: var(--global--color-green);
+								-webkit-transition: all 300ms ease-in-out;
+								-o-transition: all 300ms ease-in-out;
+								transition: all 300ms ease-in-out;
+							}
+						}
+
+						.screen-reader-text {
+							font-size: 12px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+/*------------------------------------*\
+    #BACK TO TOP
+\*------------------------------------*/
+#back-to-top {
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	opacity: 0;
+	width: 90px;
+	height: 200px;
+	border-radius: 4px 0 0 0;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	cursor: pointer;
+	-webkit-transition: 300ms ease-in-out;
+	-o-transition: 300ms ease-in-out;
+	transition: 300ms ease-in-out;
+	background-color: var(--global--color-green);
+}
+
+#back-to-top::before {
+	content: "";
+	position: absolute;
+	width: calc(100%);
+	height: calc(100%);
+	top: 0;
+	left: 0;
+	z-index: -1;
+	-webkit-transform: scaleY(0);
+	-ms-transform: scaleY(0);
+	transform: scaleY(0);
+	-webkit-transform-origin: top;
+	-ms-transform-origin: top;
+	transform-origin: top;
+	background-color: var(--global--color-heading);
+	-webkit-transition: -webkit-transform 0.24s ease-in-out;
+	-o-transition: transform 0.24s ease-in-out;
+	transition: transform 0.24s ease-in-out, -webkit-transform 0.24s ease-in-out;
+}
+
+#back-to-top:hover::before {
+	-webkit-transform: scaleY(1);
+	-ms-transform: scaleY(1);
+	transform: scaleY(1);
+	-webkit-transform-origin: bottom;
+	-ms-transform-origin: bottom;
+	transform-origin: bottom;
+}
+
+#back-to-top.show {
+	z-index: 999;
+	opacity: 1;
+}
+
+#back-to-top i {
+	color: var(--global--color-white);
+	font-weight: 700;
+	font-size: 15px;
+}
+
+@media screen and (max-width: 991.98px) {
+	#back-to-top {
+		width: 50px;
+		height: 50px;
+		border-radius: 50%;
+		bottom: 30px;
+		right: 20px;
+	}
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+	#back-to-top {
+		width: 70px;
+		height: 150px;
+	}
+}

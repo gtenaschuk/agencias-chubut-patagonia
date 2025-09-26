@@ -1,0 +1,16 @@
+@use "global/variables";
+@use "global/normalize";
+@use "global/reset";
+@use "global/ie";
+@use "global/fonts";
+@use "global/header";
+@use "global/footer";
+@use "global/links";
+
+/* If you have more custom scss files in style they should be included here to be reflected on the editor admin. */
+
+/* use blocks editor */
+@use "blocks/editor";
+
+/* custom file should always be last */
+@use "custom_editor";

@@ -1,0 +1,141 @@
+{
+    "key": "group_64ed04ef49529",
+    "title": "Calendario de fauna",
+    "fields": [
+        {
+            "key": "field_64ed053a39254",
+            "label": "Calendario Fauna por Mes",
+            "name": "calendario_fauna_por_mes",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "table",
+            "pagination": 0,
+            "min": 0,
+            "max": 0,
+            "collapsed": "field_64ed059a39255",
+            "button_label": "Agregar Item de Fauna",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_64ed059a39255",
+                    "label": "Icono",
+                    "name": "icono_fauna",
+                    "aria-label": "",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "id",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": "",
+                    "preview_size": "medium",
+                    "parent_repeater": "field_64ed053a39254"
+                },
+                {
+                    "key": "field_64ed04ef39253",
+                    "label": "Item de Fauna",
+                    "name": "item_de_fauna",
+                    "aria-label": "",
+                    "type": "post_object",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "post_type": [
+                        "fauna"
+                    ],
+                    "post_status": [
+                        "publish"
+                    ],
+                    "taxonomy": "",
+                    "return_format": "id",
+                    "multiple": 0,
+                    "allow_null": 0,
+                    "bidirectional": 0,
+                    "ui": 1,
+                    "bidirectional_target": [],
+                    "parent_repeater": "field_64ed053a39254"
+                },
+                {
+                    "key": "field_64ed05cc39256",
+                    "label": "Meses de avistage",
+                    "name": "meses_de_avistage_fauna",
+                    "aria-label": "",
+                    "type": "checkbox",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "Enero": "Enero",
+                        "Febrero": "Febrero",
+                        "Marzo": "Marzo",
+                        "Abril": "Abril",
+                        "Mayo": "Mayo",
+                        "Junio": "Junio",
+                        "Julio": "Julio",
+                        "Agosto": "Agosto",
+                        "Septiembre": "Septiembre",
+                        "Octubre": "Octubre",
+                        "Noviembre": "Noviembre",
+                        "Diciembre": "Diciembre"
+                    },
+                    "default_value": [],
+                    "return_format": "value",
+                    "allow_custom": 0,
+                    "layout": "vertical",
+                    "toggle": 0,
+                    "save_custom": 0,
+                    "custom_choice_button_text": "Add new choice",
+                    "parent_repeater": "field_64ed053a39254"
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/acf-calendario-fauna"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1693255992
+}

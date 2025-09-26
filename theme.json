@@ -1,0 +1,319 @@
+{
+	"version": 2,
+	"customTemplates": [
+	  {
+		"name": "blank",
+		"title": "Blank",
+		"postTypes": ["page", "post"]
+	  }
+	],
+	"patterns": [
+	  "header",
+	  "header-op2",
+	  "header-op3",
+	  "header-op4",
+	  "header-op5",
+	  "hidden-404",
+	  "footer-default"
+	],
+	"settings": {
+	  "appearanceTools": true,
+	  "color": {
+		"duotone": [
+		  {
+			"colors": ["#000000", "#ffffff"],
+			"slug": "foreground-and-background",
+			"name": "Foreground and background"
+		  }
+		],
+		"gradients": [
+		  {
+			"slug": "vertical-secondary-to-tertiary",
+			"gradient": "linear-gradient(180deg, #000 0%, rgba(20, 25, 28, 0) 82%)",
+			"name": "Vertical secondary to tertiary"
+		  },
+		  {
+			"slug": "vertical-secondary-to-background",
+			"gradient": "linear-gradient(to bottom,var(--global-color-2) 0%,var(--global-color-6) 100%)",
+			"name": "Vertical secondary to background"
+		  },
+		  {
+			"slug": "vertical-tertiary-to-background",
+			"gradient": "linear-gradient(to bottom,var(--global-color-2) 0%,var(--global-color-3) 100%)",
+			"name": "Vertical tertiary to background"
+		  },
+		  {
+			"slug": "diagonal-primary-to-foreground",
+			"gradient": "linear-gradient(to bottom right,var(--global-color-2) 0%,var(--global-color-4) 100%)",
+			"name": "Diagonal primary to foreground"
+		  },
+		  {
+			"slug": "diagonal-secondary-to-background",
+			"gradient": "linear-gradient(to bottom right,var(--global-color-2) 50%,var(--global-color-5) 50%)",
+			"name": "Diagonal secondary to background"
+		  },
+		  {
+			"slug": "diagonal-background-to-secondary",
+			"gradient": "linear-gradient(to bottom right,var(--global-color-3) 50%,var(--global-color-6) 50%)",
+			"name": "Diagonal background to secondary"
+		  },
+		  {
+			"slug": "diagonal-tertiary-to-background",
+			"gradient": "linear-gradient(to bottom right,var(--global-color-2) 50%,var(--global-color-4) 50%)",
+			"name": "Diagonal tertiary to background"
+		  },
+		  {
+			"slug": "diagonal-background-to-tertiary",
+			"gradient": "linear-gradient(to bottom right,var(--global-color-3) 50%,var(--global-color-4) 50%)",
+			"name": "Diagonal background to tertiary"
+		  }
+		],
+		"palette": [
+		  {
+			"slug": "green",
+			"color": "var(--global--color-green)",
+			"name": "Verde"
+		  },
+		  {
+			"slug": "title-blue",
+			"color": "var(--global--color-heading)",
+			"name": "Azul Titulos"
+		  },
+		  {
+			"slug": "dark-blue",
+			"color": "var(--global--color-secondary)",
+			"name": "Azul oscuro"
+		  },
+		  {
+			"slug": "light-gray",
+			"color": "var(--global--color-body)",
+			"name": "Gris"
+		  }
+		]
+	  },
+	  "typography": {
+      "dropCap": true,
+      "customFontSize": true,
+      "fontStyle": true,
+      "fontFamilies": [
+        {
+        "fontFamily": "\"Roboto\", sans-serif",
+        "name": "Roboto",
+        "slug": "roboto"
+        },
+        {
+        "fontFamily": "\"IBM Plex Sans\", sans-serif",
+        "name": "IBM Plex",
+        "slug": "ibm-plex"
+        }
+      ],
+      "fontSizes": [
+        {
+        "size": "1rem",
+        "slug": "small"
+        },
+        {
+        "size": "1.125rem",
+        "slug": "medium"
+        },
+        {
+        "size": "1.75rem",
+        "slug": "large"
+        },
+        {
+        "size": "clamp(1.75rem, 3vw, 2.25rem)",
+        "slug": "x-large"
+        }
+      ]
+	  },
+	  "layout": {
+		  "contentSize": "var(--default-size)",
+		  "wideSize": "var(--alignwide-size)"
+	  },
+	  "spacing": {
+		  "units": ["%", "px", "em", "rem", "vh", "vw"]
+	  }
+	},
+	"styles": {
+	  "blocks": {
+      "core/button": {
+        "border": {
+          "radius": "0",
+          "color": "var(--btn-color-fill)",
+          "width": "5px"
+        },
+        "color": {
+          "background": "var(--btn-color-fill)",
+          "text": "var(--btn-color-text)"
+        },
+        "typography": {
+          "fontSize": "var(--btn-font-size)"
+        }
+      },
+      "core/post-title": {
+        "typography": {
+          "fontFamily": "var(--wp--preset--font-family--source-serif-pro)",
+          "fontWeight": "300",
+          "lineHeight": "var(--wp--custom--typography--line-height--tiny)",
+          "fontSize": "var(--wp--custom--typography--font-size--gigantic)"
+        }
+      },
+      "core/post-comments": {
+        "spacing": {
+        "padding": {
+          "top": "var(--wp--custom--spacing--small)"
+        }
+        }
+      },
+      "core/pullquote": {
+        "border": {
+          "width": "1px 0"
+        }
+      },
+      "core/query-title": {
+        "typography": {
+          "fontFamily": "var(--font-heading-h2)",
+          "fontWeight": "var(--weight-h2)",
+          "lineHeight": "var(--line-height-h2)",
+          "fontSize": "var(--size-h2)"
+        }
+      },
+      "core/quote": {
+        "border": {
+          "width": "1px"
+        }
+      },
+      "core/paragraph": {
+        "typography": {
+          "fontFamilies": [
+            {
+            "fontFamily": "\"Radio Canada\", sans-serif",
+            "name": "Ratio Canada",
+            "slug": "ratio-canada"
+            },
+            {
+            "fontFamily": "\"Orelega One\", cursive",
+            "name": "Orelega One",
+            "slug": "orelega-one"
+            }
+          ],
+          "fontWeight": "var(--text-weight)",
+          "lineHeight": "var(--text-line-height)",
+          "fontSize": "var(--text-size)"
+        },
+        "color": {
+          "text": "var(--text-color)"
+        }
+      },
+      "core/site-title": {
+        "typography": {
+          "fontFamily": "var(--font-heading-h1)",
+          "fontWeight": "var(--weight-h1)",
+          "lineHeight": "var(--line-height-h1)",
+          "fontSize": "var(--size-p)"
+        }
+      }
+	  },
+	  "color": {
+      "background": "var(--color-background)"
+	  },
+	  "elements": {
+		"h1": {
+		  "typography": {
+        "fontFamily": "var(--h1-font-heading)",
+        "fontWeight": "var(--h1-weight)",
+        "lineHeight": "var(--h1-line-height)",
+        "fontSize": "var(--h1-size)"
+		  },
+		  "color": {
+			  "text": "var(--h1-color)"
+		  }
+		},
+		"h2": {
+      "typography": {
+        "fontFamily": "var(--h2-font-heading)",
+        "fontWeight": "var(--h2-weight)",
+        "lineHeight": "var(--h2-line-height)",
+        "fontSize": "var(--h2-size)"
+		  },
+		  "color": {
+			  "text": "var(--h2-color)"
+		  }
+		},
+		"h3": {
+      "typography": {
+        "fontFamily": "var(--h3-font-heading)",
+        "fontWeight": "var(--h3-weight)",
+        "lineHeight": "var(--h3-line-height)",
+        "fontSize": "var(--h3-size)"
+		  },
+		  "color": {
+			  "text": "var(--h3-color)"
+		  }
+		},
+		"h4": {
+      "typography": {
+        "fontFamily": "var(--h4-font-heading)",
+        "fontWeight": "var(--h4-weight)",
+        "lineHeight": "var(--h4-line-height)",
+        "fontSize": "var(--h4-size)"
+		  },
+		  "color": {
+			  "text": "var(--h4-color)"
+		  }
+		},
+		"h5": {
+		  "typography": {
+        "fontFamily": "var(--h5-font-heading)",
+        "fontWeight":"var(--h5-weight)",
+        "lineHeight": "var(--h5-line-height)",
+        "fontSize": "var(--h5-size)"
+		  },
+		  "color": {
+			  "text": "var(--h5-color)"
+		  }
+		},
+		"h6": {
+		  "typography": {
+        "fontFamily": "var(--h6-font-heading)",
+        "fontWeight": "var(--h6-weight)",
+        "lineHeight": "var(--h6-line-height)",
+        "fontSize": "var(--h6-size)"
+		  },
+		  "color": {
+			  "text": "var(--h6-color)"
+		  }
+		},
+		"link": {
+      "typography": {
+        "fontWeight": "var(--link-weight)",
+        "fontSize": "var(--link-size)",
+        "textDecoration": "none"
+		  },
+		  "color": {
+			  "text": "var(--link-color)"
+		  }
+		}
+	  },
+	  "spacing": {
+		"blockGap": "1.5rem"
+	  },
+	  "typography": {
+		"fontFamily": "var(--font-text)",
+		"lineHeight": "var(--global--line-height-11)",
+		"fontSize": "var(--global--size-xs)"
+	  }
+	},
+	"templateParts": [
+	  {
+		"name": "header",
+		"title": "Header",
+		"area": "header"
+	  },
+	  {
+		"name": "footer",
+		"title": "Footer",
+		"area": "footer"
+	  }
+	]
+  }

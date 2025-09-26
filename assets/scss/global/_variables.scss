@@ -1,0 +1,127 @@
+/* Variables */
+$alignwide-size: 1320px;
+$default-size: 856px;
+
+:root {
+	--font-primary: 'Roboto', sans-serif;
+	--font-secondary: 'IBM Plex Sans', sans-serif;
+
+	/* Text ==> use family-font: var(--font-text) */
+	--font-text: var(--font-primary);
+	--font-button: var(--font-primary);
+	--font-quote: var(--font-primary);
+
+	/* Content size */
+	--alignwide-size: #{$alignwide-size};
+	--default-size: #{$default-size};
+
+	/* The next used to give left and right margins at resolutions less than the value of alignwide-size */
+	--global-spacer-x: 20px;
+	--responsive-align: calc(100% - var(--global-spacer-x));
+
+	/* Font size  you can use this page https://nekocalc.com/px-to-rem-converter to convert */
+	--global--size-base: 1.125rem;
+
+	/* 16px / 16px */
+	--global--size-xs: 1rem;
+
+	/* 18px / 16px */
+	--global--size-sm: 1.125rem;
+
+	/* 24px / 16px */
+	--global--size-md: 1.5rem;
+
+	/* 28px / 16px */
+	--global--size-lg: 1.75rem;
+
+	/* 38px / 16px */
+	--global--size-xl: 2.375rem;
+
+	/* 40px / 16px */
+	--global--size-xxl: 2.5rem;
+
+	/* 52px / 16px */
+	--global--size-xxxl: 3.25rem;
+
+	/* Colors */
+	--global--color-green   : #32c36c;
+	--global--color-green-90: rgba(50, 195, 108, 0.9);
+	--global--color-green-70: rgba(50, 195, 108, 0.7);
+	--global--color-green-20: rgba(50, 195, 108, 0.2);
+	--global--color-heading : #253745;
+	--global--color-secondary : #2b3e4b;
+	--global--color-body      : #9b9b9b;
+	--global--color-white     : #fff;
+	--global--color-white-90  : rgba(255, 255, 255, 0.9);
+	--global--color-gray      : #f9f9f9;
+
+	--color-background: var(--global-color-white);
+	--margin-heading: 0 0 28px;
+	--margin-body: 0 0 16px;
+
+	/* Headings */
+	--h1-font-heading: var(--font-secondary);
+	--h1-color: var(--global--color-heading);
+	--h1-size: var(--global--size-xxxl);
+	--h1-weight: 700;
+	--h1-line-height: 1;
+	--margin-h1: var(--margin-heading);
+
+	--h2-font-heading: var(--font-secondary);
+	--h2-color: var(--global--color-heading);
+	--h2-size: var(--global--size-xxl);
+	--h2-weight: 700;
+	--h2-line-height: 1;
+	--margin-h2: var(--margin-heading);
+
+	--h3-font-heading: var(--font-secondary);
+	--h3-color: var(--global--color-heading);
+	--h3-size: var(--global--size-xl);
+	--h3-weight: 700;
+	--h3-line-height: 1;
+	--margin-h3: var(--margin-heading);
+
+	--h4-font-heading: var(--font-secondary);
+	--h4-color: var(--global--color-heading);
+	--h4-size: var(--global--size-lg);
+	--h4-weight: 700;
+	--h4-line-height: 1;
+	--margin-h4: var(--margin-heading);
+
+	--h5-font-heading: var(--font-secondary);
+	--h5-color: var(--global--color-heading);
+	--h5-size: var(--global--size-sm);
+	--h5-weight: 700;
+	--h5-line-height: 1;
+	--margin-h5: var(--margin-heading);
+
+	--h6-font-heading: var(--font-secondary);
+	--h6-color: var(--global--color-heading);
+	--h6-size: var(--global--size-sm);
+	--h6-weight: 700;
+	--h6-line-height: 1;
+	--margin-h6: var(--margin-heading);
+
+	/* Colors heading, text, links, hover, etc */
+
+	--link-color: var(--global-color-5);
+	--link-weight: var(--global-weight-bold);
+	--link-size: var(--global--size-xs);
+
+	--hover-color: var(--global-color-4);
+	--btn-color-fill: var(--global-color-3);
+
+	/* Background */
+	--btn-color-outline: var(--global-color-5);
+
+	/* Line */
+	--btn-color-text: var(--global-color-5);
+	--btn-font-size: var(--global--size-xs);
+
+	/* Paragraph */
+	--text-font-heading: var(--font-primary);
+	--text-color: var(--global-color-7);
+	--text-size: var(--global--size-xs);
+	--text-weight: 400;
+	--text-line-height: 28px;
+}

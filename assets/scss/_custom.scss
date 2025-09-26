@@ -1,0 +1,12 @@
+/*
+Custom Styles for front end
+*/
+@use "global/variables" as v;
+
+main {
+	margin-block-start: 0 !important;
+}
+
+.gravity-theme.ui-datepicker .ui-datepicker-header select {
+	line-height: 1.5;
+}

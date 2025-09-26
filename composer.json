@@ -1,0 +1,43 @@
+{
+    "name": "dinkum-interactive/dinkum-gutenberg-v2",
+    "type": "wordpress-theme",
+    "description": "Hi. I'm a starter theme for Dinkum Interactive.",
+    "keywords": [
+        "WordPress",
+        "Themes"
+    ],
+    "homepage": "https://github.com/DinkumInteractive/dinkum-gutenberg-v2",
+    "license": "MIT",
+    "authors": [
+      {
+        "name": "Dinkum Interactive",
+        "email": "support@dinkuminteractive.com"
+      }
+    ],
+    "require": {
+        "php": ">=7.4"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require-dev": {
+        "dealerdirect/phpcodesniffer-composer-installer": "^0.7.2",
+        "wptrt/wpthemereview": "^0.2.1",
+        "php-parallel-lint/php-parallel-lint": "^1.3.2",
+        "wp-cli/i18n-command": "^2.3.0"
+    },
+    "scripts": {
+        "lint": "@php ./vendor/squizlabs/php_codesniffer/bin/phpcs",
+        "lint-fix": "@php ./vendor/squizlabs/php_codesniffer/bin/phpcbf .",
+        "lint:php": "@php ./vendor/bin/parallel-lint --exclude .git --exclude vendor .",
+        "make-pot": "wp i18n make-pot . languages/dinkum-gutenberg-v2.pot"
+    },
+    "support": {
+        "issues": "https://github.com/DinkumInteractive/dinkum-gutenberg-v2/issues",
+        "source": "https://github.com/DinkumInteractive/dinkum-gutenberg-v2"
+    },
+    "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
+    }
+}

@@ -1,0 +1,8 @@
+assets/js/vendor
+assets/js/admin/vendor
+assets/js/frontend/vendor
+assets/js/shared/vendor
+assets/js/lib
+html/assets/js/lib
+tests
+webpack.config.babel.js

@@ -1,0 +1,66 @@
+.wp-block-group {
+	&.pv-internacional {
+		background-image: url(http://agenciasdeviajes.chubutpatagonia.gob.ar/wp-content/uploads/2023/05/peninsula-valdes-internacional-scaled.jpg);
+		position: relative;
+		z-index: 1;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center center;
+		margin-top: 100px;
+
+		&:before {
+			content: "";
+			display: inline-block;
+			height: 100%;
+			left: 0;
+			position: absolute;
+			top: 0;
+			width: 100%;
+			z-index: -1;
+			background-image: -webkit-gradient(
+				linear,
+				left top,
+				left bottom,
+				color-stop(50%, #0000),
+				to(#000)
+			);
+			background-image: -o-linear-gradient(top, #0000 50%, #000 100%);
+			background-image: linear-gradient(180deg, #0000 50%, #000 100%);
+		}
+
+		.wp-block-columns.columns-video {
+			.wp-block-column {
+				p {
+					color: var(--global--color-white) !important;
+				}
+
+				&.col-video {
+					-webkit-transform: translateY(200px);
+					-ms-transform: translateY(200px);
+					transform: translateY(200px);
+					margin-top: -100px;
+
+					@media (max-width: 1100px) {
+						width: calc(50% - 1.125em) !important;
+						-webkit-transform: translateY(100px);
+						-ms-transform: translateY(100px);
+						transform: translateY(100px);
+					}
+
+					@media (max-width: 600px) {
+						width: calc(50% - 1.125em) !important;
+						-webkit-transform: translateY(0);
+						-ms-transform: translateY(0);
+						transform: translateY(0);
+						margin-top: 0;
+					}
+				}
+			}
+		}
+	}
+}
+
+.wp-embed-responsive .wp-has-aspect-ratio iframe {
+	border-radius: 14px !important;
+	height: 375px;
+}

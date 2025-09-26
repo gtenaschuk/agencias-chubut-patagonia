@@ -1,0 +1,28 @@
+::-moz-selection {
+	background-color: var(--global--color-green);
+	color: var(--global--color-white);
+	text-shadow: none;
+}
+
+::selection {
+	background-color: var(--global--color-green);
+	color: var(--global--color-white);
+	text-shadow: none;
+}
+
+a {
+	font-family: var(--global--font-body);
+	font-weight: 400;
+	color: var(--global--color-green);
+	-webkit-transition: all 300ms ease-in-out;
+	-o-transition: all 300ms ease-in-out;
+	transition: all 300ms ease-in-out;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+	-webkit-transition: all 300ms ease-in-out;
+	-o-transition: all 300ms ease-in-out;
+	transition: all 300ms ease-in-out;
+}

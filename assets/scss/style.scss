@@ -1,0 +1,16 @@
+@use "global/variables";
+@use "global/normalize";
+@use "global/reset";
+@use "global/fonts";
+@use "global/breakpoints";
+@use "global/ie";
+@use "global/print";
+@use "global/header";
+@use "global/heading";
+@use "global/footer";
+@use "blocks/style";
+@use "global/links";
+@use "global/shop";
+
+/* custom file should always be last */
+@use "custom";
