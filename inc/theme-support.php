@@ -77,7 +77,7 @@ function dinkuminteractive_theme_support() {
 			wp_enqueue_script('thickbox');
 			wp_enqueue_style('thickbox');
 		}
-		wp_enqueue_script('fontawesome', 'https://kit.fontawesome.com/2da18adc9a.js', array(), '1.0.0', false );
+		wp_enqueue_script('fontawesome', 'https://kit.fontawesome.com/2787449744.js', array(), '1.0.0', false );
 	}
 	add_action('wp_enqueue_scripts', 'pv_enqueue_scritps');
 
