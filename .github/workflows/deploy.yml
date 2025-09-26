@@ -34,6 +34,6 @@ jobs:
           # The local folder to copy, defaults to root project folder
           local_path: ./*
           # This was generated using the output of
-          remote_path: '/home/web/agenciasdeviajes.chubutpatagonia.gob.ar/public_html/wp-content/themes/agencias-chubut-patagonia/'
+          remote_path: '/home/PeninsulaValdes_deploy/public_html/wp-content/themes/agencias-chubut-patagonia/'
           rsyncArgs: '--exclude=node_modules --exclude=.git --exclude=*.log'
           sftpArgs: '-o ConnectTimeout=5'
